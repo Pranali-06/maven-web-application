@@ -19,7 +19,7 @@
 	<properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.2</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://18.138.81.149:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
@@ -52,12 +52,12 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-core</artifactId>
-			<version>1.9.5</version>
-			<scope>test</scope>
-		</dependency>
+	   <dependency> 
+         <groupId>org.mockito</groupId>
+         <artifactId>mockito-core</artifactId>
+         <version>5.11.0</version>
+         <scope>test</scope>
+       </dependency>
 
 		<!-- compile dependencies -->
 
@@ -123,17 +123,6 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.2.11.v20150529</version>
-				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webApp>
-						<contextPath>/maven-web-application</contextPath>
-					</webApp>
-				</configuration>
-			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
